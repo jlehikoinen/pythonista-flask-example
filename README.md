@@ -18,8 +18,6 @@ Note: the setup script will overwrite exsting `pythonista-flask-example` folder 
 
 ## Usage
 
-Run demo Flask server:
-
 Run `flask_server.py` in `pythonista-flask-example` folder
 
 Open `http://localhost:5000` URL in iOS web browser
