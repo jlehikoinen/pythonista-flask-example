@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>iTunes Album Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+      .container {
+        max-width: 700px;
+        padding-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+  
+  	<ul class="nav nav-pills">
+  		<li role="presentation" class="active"><a href="#">Search</a></li>
+  		<li role="presentation"><a href="/info">Info</a></li>
+		</ul>
+	
+		<div class="jumbotron">
+			<h2>iTunes Album Search</h2>
+			
+			<form action="/" method="post">
+    		<input type="text" name="search" placeholder="Enter artist name" value="{{ request.form.search }}">
+				<br><br>
+    		<input type="submit" class="btn btn-primary btn-lg" value="Search">
+			</form>
+		</div>
+		
+		{% if error %}
+		<div class="alert alert-warning" role="alert">{{ error }}</div>
+		{% endif %}
+		
+		{% if data %}
+    <div class="container">
+			<h2>{{ data[0][0] }} albums in iTunes</h2>
+			<table class="table table-striped">
+    		<thead>
+      		<tr>
+        		<th></th>
+        		<th>Album name</th>
+        		<th>Price (€)</th>
+      		</tr>
+    		</thead>
+    		<tbody>
+				{% for item in data %}
+    			<tr>
+    	  		<td><img src="{{ item[3] }}"></td>
+    				<td>{{ item[1] }}</td>
+    				<td>{{ item[2] }}</td>
+  				</tr>
+  			{% endfor %}
+  			</tbody>
+  		</table>
+  	</div>
+  	{% endif %}
+    
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
