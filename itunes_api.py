@@ -33,7 +33,7 @@ def search_album(query, entity, limit):
     if (item["artistName"].lower()) == query.lower():
       if item.get("artistName", None):
         artist_name = item["artistName"]
-      if item.get("collectionName", None): 
+      if item.get("collectionName", None):
         album_name = item["collectionName"]
       if item.get("collectionPrice", None):
         album_price = item["collectionPrice"]
@@ -44,10 +44,10 @@ def search_album(query, entity, limit):
       if item.get("releaseDate", None):
         release_date = item["releaseDate"]
 
-      sub_array = [artist_name, 
-                   album_name, 
-                   album_price, 
-                   album_cover, 
+      sub_array = [artist_name,
+                   album_name,
+                   album_price,
+                   album_cover,
                    release_date]
       main_array.append(sub_array)
 
@@ -57,7 +57,7 @@ def search_album(query, entity, limit):
   return main_array
 
 
-def	main():
+def main():
 
   data = search_album('Anthrax', 'album', 100)
   print data

@@ -33,7 +33,7 @@ def all_info():
   return all_dict
 
 
-def	main():
+def main():
   print battery_level()
   print device_name()
   print system_version()
