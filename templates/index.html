@@ -12,51 +12,50 @@
     </style>
   </head>
   <body>
+  <ul class="nav nav-pills">
+    <li role="presentation" class="active"><a href="#">Search</a></li>
+    <li role="presentation"><a href="/info">Info</a></li>
+  </ul>
 
-  	<ul class="nav nav-pills">
-  		<li role="presentation" class="active"><a href="#">Search</a></li>
-  		<li role="presentation"><a href="/info">Info</a></li>
-	</ul>
+  <div class="jumbotron">
+    <h2>iTunes Album Search</h2>
+    <form action="/" method="post">
+      <input type="text" name="search" placeholder="Enter artist name" value="{{ request.form.search }}">
+      <br><br>
+      <input type="submit" class="btn btn-primary btn-lg" value="Search">
+    </form>
+  </div>
 
-	<div class="jumbotron">
-        <h2>iTunes Album Search</h2>
+  {% if error %}
+  <div class="alert alert-warning" role="alert">{{ error }}
+  </div>
+  {% endif %}
 
-		<form action="/" method="post">
-            <input type="text" name="search" placeholder="Enter artist name" value="{{ request.form.search }}">
-			<br><br>
-    	    <input type="submit" class="btn btn-primary btn-lg" value="Search">
-		</form>
-	</div>
+  {% if data %}
+  <div class="container">
+    <h2>{{ data[0][0] }} albums in iTunes</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Album name</th>
+          <th>Price (€)</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in data %}
+        <tr>
+          <td><img src="{{ item[3] }}"></td>
+          <td>{{ item[1] }}</td>
+          <td>{{ item[2] }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% endif %}
 
-	{% if error %}
-	<div class="alert alert-warning" role="alert">{{ error }}</div>
-	{% endif %}
-
-	{% if data %}
-    <div class="container">
-		<h2>{{ data[0][0] }} albums in iTunes</h2>
-		<table class="table table-striped">
-    	    <thead>
-      	        <tr>
-        		<th></th>
-        		<th>Album name</th>
-        		<th>Price (€)</th>
-      		    </tr>
-    	    </thead>
-    	    <tbody>
-		    {% for item in data %}
-    		    <tr>
-    	  		<td><img src="{{ item[3] }}"></td>
-    			<td>{{ item[1] }}</td>
-                <td>{{ item[2] }}</td>
-  		        </tr>
-  		    {% endfor %}
-  		    </tbody>
-        </table>
-  	</div>
-  	{% endif %}
-
-	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
   </body>
 </html>

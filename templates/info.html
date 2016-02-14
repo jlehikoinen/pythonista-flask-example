@@ -12,25 +12,24 @@
     </style>
   </head>
   <body>
-  
-  	<ul class="nav nav-pills">
-  	<li role="presentation"><a href="/">Search</a></li>
-  	<li role="presentation" class="active"><a href="#">Info</a></li>
-		</ul>
-		
+    <ul class="nav nav-pills">
+      <li role="presentation"><a href="/">Search</a></li>
+      <li role="presentation" class="active"><a href="#">Info</a></li>
+    </ul>
+
     <div class="container">
       <h2>Device info</h2>
       {% if info %}
-			<ul>
-				<li>Device name: {{ info.device_name }}</li>
-      	<li>Server OS version: {{ info.system_version }}</li>
-      	<li>UUID: {{ info.uuid }}</li>
-      	<li>Battery level: {{ info.battery_level }}</li>
-    	</ul>
-    	{% endif %}
-  	</div>
+      <ul>
+        <li>Device name: {{ info.device_name }}</li>
+        <li>Server OS version: {{ info.system_version }}</li>
+        <li>UUID: {{ info.uuid }}</li>
+        <li>Battery level: {{ info.battery_level }}</li>
+      </ul>
+      {% endif %}
+    </div>
     
-		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
   </body>
 </html>
