@@ -8,9 +8,9 @@ This little Flask app demonstrates iTunes Search API and Pythonista Objective-C 
 
 ## Setup
 
-Create a New Empty Script in Pythonista to Documents root. Copy & paste [this Gist](https://gist.github.com/jlehikoinen/ebbb77b366d908243ad6).
+Create a new Empty Script in Pythonista to Documents root. Copy & paste [this Gist](https://gist.github.com/jlehikoinen/ebbb77b366d908243ad6).
 
-Note: the setup script will overwrite exsting `pythonista-flask-example` folder if it exists.
+Note: the setup script will overwrite existing `pythonista-flask-example` folder if it exists.
 
 1. Run setup script
 
