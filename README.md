@@ -23,3 +23,23 @@ Note: the setup script will overwrite existing `pythonista-flask-example` folder
 Run `flask_server.py` in `pythonista-flask-example` folder
 
 Open `http://localhost:5000` URL in iOS web browser
+
+## macOS Setup (optional)
+
+Setup virtualenv:
+
+`$ virtualenv flask`
+
+`$ source flask/bin/activate`
+
+`$ pip install flask`
+
+`$ pip install requests`
+
+Run Flask server:
+
+`$ python flask_server.py`
+
+Exit virtualenv:
+
+`$ deactivate`
