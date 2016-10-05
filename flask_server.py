@@ -3,7 +3,7 @@ import os
 # PyPI
 from flask import Flask, render_template, request
 
-import device_info
+# import device_info
 import itunes_api
 
 ###
@@ -14,7 +14,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def index():
   error = None
-  
+
   if request.method == 'GET':
     data = None
   if request.method == 'POST':
