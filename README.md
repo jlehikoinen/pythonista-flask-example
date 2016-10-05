@@ -26,6 +26,10 @@ Open `http://localhost:5000` URL in iOS web browser
 
 ## macOS Setup (optional)
 
+Clone this repo:
+
+`$ git clone https://github.com/jlehikoinen/pythonista-flask-example.git`
+
 Setup virtualenv:
 
 `$ virtualenv flask`
