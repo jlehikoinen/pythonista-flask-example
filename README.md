@@ -30,6 +30,8 @@ Clone this repo:
 
 `$ git clone https://github.com/jlehikoinen/pythonista-flask-example.git`
 
+`$ cd pythonista-flask-example`
+
 Setup virtualenv:
 
 `$ virtualenv flask`
