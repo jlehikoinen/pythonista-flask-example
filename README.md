@@ -48,6 +48,6 @@ Run Flask server:
 
 Open `http://localhost:5000` URL in macOS web browser
 
-Exit virtualenv:
+After testing, exit virtualenv:
 
 `$ deactivate`
