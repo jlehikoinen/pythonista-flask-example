@@ -48,6 +48,8 @@ Run Flask server:
 
 Open `http://localhost:5000` URL in macOS web browser
 
+** Note that Pythonista Objective-C APIs in "Info" tab doesn't work in macOS **
+
 After testing, exit virtualenv:
 
 `$ deactivate`
