@@ -46,6 +46,8 @@ Run Flask server:
 
 `$ python flask_server.py`
 
+Open `http://localhost:5000` URL in macOS web browser
+
 Exit virtualenv:
 
 `$ deactivate`
