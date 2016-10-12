@@ -1,6 +1,6 @@
 # Pythonista Flask example
 
-Little Flask app that demonstrates iTunes Search API and Pythonista Objective-C APIs.
+Little Flask app that demonstrates iTunes Search API and Pythonista Objective-C APIs in iOS. You can also run the iTunes Search API example on macOS by switching to `macos` branch.
 
 ## Requirements
 
