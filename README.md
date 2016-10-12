@@ -32,6 +32,10 @@ Clone this repo:
 
 `$ cd pythonista-flask-example`
 
+Switch to `macos` branch:
+
+`$ git checkout macos`
+
 Setup virtualenv:
 
 `$ virtualenv flask`
