@@ -2,7 +2,7 @@
 
 Little Flask app that demonstrates iTunes Search API and Pythonista Objective-C APIs in iOS. You can also run the iTunes Search API example on macOS by switching to `macos` branch.
 
-## Requirements
+## iOS Requirements
 
 * Pythonista (iOS)
 
@@ -24,7 +24,11 @@ Run `flask_server.py` in `pythonista-flask-example` folder
 
 Open `http://localhost:5000` URL in iOS web browser
 
-## macOS Setup (optional)
+## macOS Requirements
+
+* virtualenv
+
+## macOS Setup
 
 Clone this repo:
 
