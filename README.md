@@ -4,7 +4,7 @@ Little Flask app that demonstrates iTunes Search API and Pythonista Objective-C 
 
 ## iOS Requirements
 
-* Pythonista (iOS)
+* Pythonista
 
 ## iOS Setup
 
