@@ -21,7 +21,7 @@ def system_version():
   return str(CUR_DEVICE.systemVersion())
 
 def device_uuid():
-  return str(CUR_DEVICE.identifierForVendor()).split()[2]
+  return str(CUR_DEVICE.identifierForVendor())
 
 def all_info():
 
