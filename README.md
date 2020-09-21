@@ -24,7 +24,7 @@ Open `http://localhost:5000` URL in iOS web browser.
 
 ## macOS Requirements
 
-* virtualenv
+* venv
 
 ## macOS Setup
 
@@ -38,21 +38,21 @@ Switch to `macos` branch:
 
 `$ git checkout macos`
 
-Setup virtualenv:
+Setup venv:
 
-`$ virtualenv flask`
+`$ python3 -m venv flask`
 
 `$ source flask/bin/activate`
 
-`$ pip install flask`
+`$ pip3 install flask`
 
-`$ pip install requests`
+`$ pip3 install requests`
 
 ## macOS Usage
 
 Run Flask server:
 
-`$ python flask_server.py`
+`$ python3 flask_server.py`
 
 Open `http://localhost:5000` URL in macOS web browser.
 
