@@ -3,7 +3,6 @@ import os
 # PyPI
 from flask import Flask, render_template, request
 
-import device_info
 import itunes_api
 
 ###
@@ -23,12 +22,6 @@ def index():
     if not data:
       error = 'No search results for ' + search_input
   return render_template('index.html', data=data, error=error)
-
-# Info
-@app.route('/info')
-def show_info():
-  info = device_info.all_info()
-  return render_template('info.html', info=info)
 
 # Launch server
 if __name__ == "__main__":
