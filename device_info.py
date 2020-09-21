@@ -34,10 +34,10 @@ def all_info():
 
 
 def main():
-  print((battery_level()))
-  print((device_name()))
-  print((system_version()))
-  print((device_uuid()))
+  print(battery_level())
+  print(device_name())
+  print(system_version())
+  print(device_uuid())
 
 if __name__ == '__main__':
   main()
