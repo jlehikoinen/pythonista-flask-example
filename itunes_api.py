@@ -25,8 +25,8 @@ def search_album(query, entity, limit):
   try:
     response = requests.get(url)
     data_dict = response.json()
-  except Exception, e:
-    print str(e)
+  except Exception as e:
+    print((str(e)))
 
   # Quick and dirty iteration
   for item in data_dict["results"]:
@@ -60,7 +60,7 @@ def search_album(query, entity, limit):
 def main():
 
   data = search_album('Anthrax', 'album', 100)
-  print data
+  print(data)
 
 if __name__ == '__main__':
   main()
