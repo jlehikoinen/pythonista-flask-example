@@ -60,7 +60,7 @@ def search_album(query, entity, limit):
 def main():
 
   data = search_album('Anthrax', 'album', 100)
-  print data
+  print(data)
 
 if __name__ == '__main__':
   main()
