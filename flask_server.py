@@ -3,7 +3,7 @@ import os
 # PyPI
 from flask import Flask, render_template, request
 
-import device_info
+# import device_info
 import itunes_api
 
 ###
