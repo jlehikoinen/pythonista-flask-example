@@ -24,7 +24,7 @@ Open `http://localhost:5000` URL in iOS web browser.
 
 ## macOS Requirements
 
-* venv
+* Python 3 installed (including venv)
 
 ## macOS Setup
 
