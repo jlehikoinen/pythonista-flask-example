@@ -32,5 +32,6 @@ def show_info():
 
 # Launch server
 if __name__ == "__main__":
-  port = int(os.environ.get("PORT", 5000))
-  app.run(host='0.0.0.0', port=port)
+  app.run(host='0.0.0.0', port=443, ssl_context=('300.hoax.fi.crt', '300.hoax.fi.key'))
+  # port = int(os.environ.get("PORT", 5000))
+  # app.run(host='0.0.0.0', port=port)
