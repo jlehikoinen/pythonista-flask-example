@@ -59,3 +59,33 @@ Open `http://localhost:5000` URL in macOS web browser.
 After testing, exit virtualenv:
 
 `$ deactivate`
+
+## macOS TLS tests
+
+Switch to `tls` branch:
+
+`$ git checkout tls`
+
+Install `certs/hoax.fi Root CA Certificate.mobileconfig` config profile.
+
+Setup venv:
+
+`$ python3 -m venv flask`
+
+`$ source flask/bin/activate`
+
+`$ pip3 install --upgrade pip`
+
+`$ pip3 install flask`
+
+`$ pip3 install requests`
+
+`$ pip3 install pyopenssl`
+
+Run Flask server with cert parameters:
+
+`$ python3 flask_server.py certs/300/300.hoax.fi.crt certs/300/300.hoax.fi.key`
+
+Add `<my ip address> 300.hoax.fi` to `/etc/hosts`.
+
+Open `https://300.hoax.fi` URL in macOS web browser.
