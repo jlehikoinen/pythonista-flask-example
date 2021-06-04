@@ -1,4 +1,5 @@
 import os
+import sys
 
 # PyPI
 from flask import Flask, render_template, request
@@ -6,7 +7,18 @@ from flask import Flask, render_template, request
 # import device_info
 import itunes_api
 
-###
+### Args
+
+args = sys.argv[1:]
+if len(args) != 2:
+  print("Two parameters required.")
+  print("Usage: python3 flask_server.py path/to/certificate path/to/key")
+  print("Exiting.")
+  exit(1)
+else:
+  cert, key = args
+
+### Web app
 
 app = Flask(__name__)
 
@@ -32,6 +44,6 @@ def show_info():
 
 # Launch server
 if __name__ == "__main__":
-  app.run(host='0.0.0.0', port=443, ssl_context=('300.hoax.fi.crt', '300.hoax.fi.key'))
+  app.run(host='0.0.0.0', port=443, ssl_context=(cert, key))
   # port = int(os.environ.get("PORT", 5000))
   # app.run(host='0.0.0.0', port=port)

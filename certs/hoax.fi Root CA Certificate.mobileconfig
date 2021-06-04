@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1">
+  <dict>
+    <key>PayloadUUID</key>
+    <string>A4A9B5EF-CAEA-4CD6-82C1-D5CCD31312B8</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadOrganization</key>
+    <string>Acme Inc.</string>
+    <key>PayloadIdentifier</key>
+    <string>A4A9B5EF-CAEA-4CD6-82C1-D5CCD31312B8</string>
+    <key>PayloadDisplayName</key>
+    <string>hoax.fi Root CA Certificate</string>
+    <key>PayloadDescription</key>
+    <string/>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>PayloadEnabled</key>
+    <true/>
+    <key>PayloadRemovalDisallowed</key>
+    <true/>
+    <key>PayloadScope</key>
+    <string>System</string>
+    <key>PayloadContent</key>
+    <array>
+      <dict>
+        <key>PayloadUUID</key>
+        <string>1089F333-32A3-4AB8-B32A-AD7773863584</string>
+        <key>PayloadType</key>
+        <string>com.apple.security.root</string>
+        <key>PayloadOrganization</key>
+        <string>Acme Inc.</string>
+        <key>PayloadIdentifier</key>
+        <string>1089F333-32A3-4AB8-B32A-AD7773863584</string>
+        <key>PayloadDisplayName</key>
+        <string>hoax.fi</string>
+        <key>PayloadDescription</key>
+        <string/>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadEnabled</key>
+        <true/>
+        <key>PayloadCertificateFileName</key>
+        <string>myCA.cer</string>
+        <key>PayloadContent</key>
+        <data>MIIDRDCCAiwCCQDC5CXlcKBM3TANBgkqhkiG9w0BAQsFADBkMQswCQYDVQQGEwJGSTERMA8GA1UEBwwISGVsc2lua2kxEjAQBgNVBAoMCUFjbWUgSW5jLjEQMA4GA1UEAwwHaG9heC5maTEcMBoGCSqGSIb3DQEJARYNYWRtaW5AaG9heC5maTAeFw0yMTA2MDMxMTA4MTdaFw0yNjA2MDIxMTA4MTdaMGQxCzAJBgNVBAYTAkZJMREwDwYDVQQHDAhIZWxzaW5raTESMBAGA1UECgwJQWNtZSBJbmMuMRAwDgYDVQQDDAdob2F4LmZpMRwwGgYJKoZIhvcNAQkBFg1hZG1pbkBob2F4LmZpMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1cNjK929O8IlgzmV/q75Vnr6U2bBmSBay2cjZNzUFrDLkmkz+d3nw6DhIbZp2anNmPxnGnMsVnCSJs9MAp/dgkTy5aZb9KDGWrvok1gfXXymKY/bIFBgS4K0d8ySMlGGzqqj0wi70eAxL72+Fu5Rhwheyq9t/IWQFECNTgOekb+XyYmazrdtCgV5WXTw+FCEvj5vD8wm72zDtzyjTvdI3arkxyPldiE7+BLFT+53C4jdS7vWDGek3c4RqYGxbTFwxoGULcYFBUdnt6Tmu6ShCrBN0Afj1x0AqZvWp32Y3equmQl8fGe4VDAw9iRWdZxzL0w0UvHiPnC2cJzi30+jgQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQASpxMLSjYQf8EaC8iOlRq5+8WCCADL5emSFgDf4p1Qah0dHOcfv8frRUAKqOsWTTx280s1C2IyaUDvC4l5UTfkFLw77jsEbfwKeGSxhTSKIE4Nl4NOmVhdjVFpAxZLOx/tqPpD/91rMTcfvqqtDd2zDqIfMfiALUXYK2X4X763lPeLcVMty2kezSbiUqh9DHacIm4+SaaNPmRQNVDaELveiaqwFkFPM9pmFZHmB/0ltWxncdWln1e9VsiuKycokGhLg6EERNLkqwWjvrDACv4mWNsf3tz7ly6jptC/K6sCsZVU3zkom8pg/HNr2gIg0J20nnJg87Qm5XXwWWT+wTmq</data>
+        <key>AllowAllAppsAccess</key>
+        <true/>
+        <key>KeyIsExtractable</key>
+        <true/>
+      </dict>
+    </array>
+  </dict>
+</plist>
